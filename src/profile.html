@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/profile.css">
+        <script type="text/javascript" src="assets/js/profile.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="cropperjs-master/dist/cropper.js"></script>
+        <link rel="stylesheet" type="text/css" href="cropperjs-master/dist/cropper.css">  
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div class="crop_image_container">
+            <div class="crop_image_div">
+                    <img id="image" class="crop_image" src="assets/images/password.svg" style="width: 400px; max-width: 100%;" id="image">
+            </div>
+                
+        </div>
+        <div class="container">
+        <div class="profile_div">
+            <div class="profile_img_div">
+                <img class="profile_img" src="assets/images/astronaut.svg" >
+                <input type="file" id="file_upload_button" style="display: none;">
+                <div class="edit_img_button" id="cover_button">
+                    <img class="edit_img_pencil" src="assets/images/pencil.svg">
+                    <span>Edit</span>
+                </div>
+            </div>
+            <div class="profile_details">
+                <span class="name_span">Astronaut</span>
+                <span class="status_span">Working as an employee.</span>
+                <div class="location_div">
+                    <img class="location_img" src="assets/images/place_holder.svg">
+                    <span>--Not Added--</span>
+                </div>
+            </div>
+            <div class="edit_profile_button" id="edit_profile">
+                <img class="edit_profile_img" src="assets/images/pencil.svg">
+                <span>Edit Profile</span></div>    
+        </div>
+
+        <div class="projects_div">
+            <div class="add_project_button" onclick="add_project()" id="add_project">
+                <span>Start Project</span>
+            </div>
+            <div class="no_project_div">
+                <div class="no_project_text_div">
+                    <span>You don't have any projects here, please add.</span>
+                </div>
+                <div class="add_project_button" onclick="add_project()">
+                    <span>Start Project</span>
+                </div>
+            </div>
+            <div class="projects_list_div">
+
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

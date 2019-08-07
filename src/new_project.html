@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/new_project.css">
+        <script type="text/javascript" src="assets/js/new_project.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="logo"><h2>Blink</h2></div>
+            <div class="err_msg_hide">Error msg here</div>
+            <div class="project_form">
+                <label for="name">Project Name</label>
+                <div class="name_div">
+                <input id="name_input" type="text" name="name" placeholder="Project Name">
+                </div>
+                
+                <label for="descreption">Descreption(Optional)</label>
+
+                <div class="descreption_div">
+                    <input id="descreption_input" type="text" name="descreption" placeholder="Descreption">
+                </div>
+                
+                <label for="content">Content</label>
+                <div class="content_div">
+                    <textarea class="content_input" id="content_input" name="cotent" rows="10" cols="30" placeholder="Enter content here"></textarea>
+                </div>
+
+            </div>
+            <div class="button_div">
+                <div class="save_button" onclick="save()"><span>Save</span></div>
+            </div>
+        </div>
+    </body>
+</html>
